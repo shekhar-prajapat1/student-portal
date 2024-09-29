@@ -6,9 +6,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Welcome to the Course Platform</title>
+        <title>Welcome to the Web DailiGo Platform</title>
       </Head>
-      <h1 className={styles.title}>🎓 Welcome to Our Course Platform! 🎓</h1>
+      <h1 className={styles.title}>🎓 Welcome to Web DailiGo Platform! 🎓</h1>
       <p className={styles.subtitle}>
         Whether you're here to learn something new or enhance your skills, 
         we have everything you need to succeed in your studies!
