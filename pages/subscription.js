@@ -1,6 +1,8 @@
 import Head from 'next/head';
 import Link from 'next/link';
-import styles from './Subscription.module.css'; // Import CSS for styling
+import styles from './Subscription.module.css';
+
+//import styles from './Subscription.module.css'; // Import CSS for styling
 
 const courses = [
   {
