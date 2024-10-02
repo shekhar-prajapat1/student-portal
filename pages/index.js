@@ -8,7 +8,7 @@ export default function Home() {
     <div className={styles.container}>
       <Head>
        <link  rel="icon" href ="favicon.png"></link>
-        <title>DailiGo: From Random Steps to Systemized Success</title>
+        <title>DailiGo: Randomization to Systemization</title>
       </Head>
       <h1 className={styles.title}>🎓 Welcome to Web DailiGo Platform! 🎓</h1>
       <p className={styles.subtitle}>
