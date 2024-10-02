@@ -1,0 +1,106 @@
+/* components/Footer.module.css */
+
+.footer { 
+    background-color: #4d0808; /* Background color for footer */
+    font-family: sans-serif; /* Font family */
+    margin: 0; /* Reset margin */
+}
+
+.footerSection {
+    display: flex; /* Flexbox layout for the footer section */
+    justify-content: space-between; /* Space between child elements */
+    align-items: flex-start; /* Align items at the start */
+    color: bisque; /* Text color */
+    flex-wrap: wrap; /* Wrap child elements */
+}
+
+.footer1 {
+    text-align: left; /* Left-align text */
+    width: 20%; /* Set width */
+    background-color: #491f1f; /* Background color for footer1 */
+    padding: 2%; /* Padding inside footer1 */
+    font-size: medium; /* Font size */
+    margin-left: 5%; /* Left margin */
+}
+
+.Copyright {
+    text-align: center; /* Center align copyright text */
+    font-size: larger; /* Larger font size for copyright */
+    color: antiquewhite; /* Copyright text color */
+}
+
+.callback {
+    display: flex; /* Flexbox for callback input/button */
+    align-items: center; /* Center align items */
+}
+
+.callback input {
+    padding-left: 2%; /* Padding for input */
+    width: 45%; /* Width of input */
+    height: 5vh; /* Height of input */
+    font-size: 14px; /* Font size */
+    color: black; /* Input text color */
+    border: black 2px solid; /* Input border */
+}
+
+.callback button {
+    height: 5.5vh; /* Height for button */
+    border: black 2px solid; /* Button border */
+    background-color: rgb(42, 3, 15); /* Button background color */
+    width: 27%; /* Width of button */
+    color: white; /* Button text color */
+}
+
+.phonenum, .emailinfo {
+    display: flex; /* Flexbox layout */
+    align-items: center; /* Center align items */
+}
+
+.footerSection h4 {
+    font-size: x-large; /* Font size for h4 in footerSection */
+}
+
+.helpText {
+    font-size: large; /* Font size for help text */
+    color: rgb(247, 242, 242); /* Color for help text */
+}
+
+.links ul {
+    font-size: large; /* Font size for links */
+    line-height: 1.5em; /* Line height for links */
+    list-style: none; /* Remove list styling */
+    margin-left: 0; /* Remove left margin */
+}
+
+.links li {
+    margin-left: 0; /* Remove left margin */
+    text-align: left; /* Left-align links */
+    padding: 5px; /* Padding for links */
+    padding-left: 0; /* Remove left padding */
+}
+
+.socialmeadia {
+    padding: 5px; /* Padding for social media section */
+    margin-bottom: 10px; /* Margin below */
+    margin-right: 5%; /* Right margin */
+}
+
+@media (max-width: 768px) {
+    .footerSection {
+        flex-direction: row; /* Row direction for footerSection */
+        align-items: flex-start; /* Align items at the start */
+    }
+
+    .footer1, .socialmeadia {
+        margin-left: 2%; /* Reduce left margin on mobile */
+        margin-right: 2%; /* Add right margin for balance on mobile */
+        width: 100%; /* Full width on mobile */
+        margin-bottom: 20px; /* Margin below */
+    }
+
+    .callback input, .callback button {
+        width: 100px; /* Width for input and button on mobile */
+        height: 4.4vh; /* Height */
+        font-size: 12px; /* Font size */
+    }
+}

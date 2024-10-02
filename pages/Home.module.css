@@ -1,16 +1,16 @@
 .container {
-    max-width: 600px;
-    margin: auto;
-    padding: 2rem;
+    width : 100% ; 
+  
+    /*padding: 2rem;*/
     text-align: center;
-    background-color: #f0f8ff;
+    background-color : #fff5ed;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
   
   .title {
     font-size: 2.5rem;
-    color: #0070f3; /* Bright color for the title */
+    color: #502727  ; /* Bright color for the title */
   }
   
   .subtitle {
@@ -24,13 +24,17 @@
     color: #ff4500; /* Bright orange for instructions */
     margin: 1rem 0;
   }
+  /*
+  #4d0808 - brown
+#fff5ed - light 
+#ff7a00 - orange  */
   
   .button {
     padding: 1rem 2rem;
     font-size: 1.2rem;
     color: white;
-    background-color: #0070f3; /* Blue background for buttons */
-    border: none;
+    background-color:#4d0808 ; /* dark brown background for buttons */
+    border:2px black solid;
     border-radius: 4px;
     cursor: pointer;
     margin: 1rem;
@@ -38,7 +42,7 @@
   }
   
   .button:hover {
-    background-color: #005bb5; /* Darker blue on hover */
+    background-color:#491f1f; /* Darker blue on hover */
   }
   
   .footer {
@@ -46,4 +50,50 @@
     color: #666; /* Gray color for footer text */
     margin-top: 2rem;
   }
+  @media (max-width: 768px) {
+    .title {
+        font-size: 2.5rem; /* Decrease title size */
+    }
+
+    .subtitle {
+        font-size: 1.5rem; /* Decrease subtitle size */
+    }
+
+    .instruction {
+        font-size: 1.1rem; /* Decrease instruction size */
+    }
+
+    .button {
+        padding: 0.8rem 1.5rem; /* Adjust button padding */
+        font-size: 1rem; /* Decrease button font size */
+    }
+
+    .footer {
+        font-size: 0.9rem; /* Smaller footer text */
+    }
+}
+
+/* For mobile devices */
+@media (max-width: 480px) {
+    .title {
+        font-size: 1.8rem; /* Further decrease title size for small screens */
+    }
+
+    .subtitle {
+        font-size: 1.2rem; /* Further decrease subtitle size */
+    }
+
+    .instruction {
+        font-size: 1rem; /* Further decrease instruction size */
+    }
+
+    .button {
+        width: 100%; /* Make buttons full-width on mobile */
+        font-size: 0.9rem; /* Decrease button font size */
+    }
+
+    .footer {
+        font-size: 0.8rem; /* Smaller footer text for small screens */
+    }
+}
   

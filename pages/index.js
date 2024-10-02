@@ -1,12 +1,14 @@
 import Head from 'next/head';
 import Link from 'next/link';
 import styles from './Home.module.css'; // Import CSS for styling
+import Footer from '../components/Footer';
 
 export default function Home() {
   return (
     <div className={styles.container}>
       <Head>
-        <title>Welcome to the Web DailiGo Platform</title>
+       <link  rel="icon" href ="favicon.png"></link>
+        <title>DailiGo: From Random Steps to Systemized Success</title>
       </Head>
       <h1 className={styles.title}>🎓 Welcome to Web DailiGo Platform! 🎓</h1>
       <p className={styles.subtitle}>
@@ -29,6 +31,8 @@ export default function Home() {
         📈 Track your course completion percentage and access exclusive content 
         with your subscription!
       </p>
+      <Footer/>
     </div>
+  
   );
 }
