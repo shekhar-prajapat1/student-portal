@@ -3,7 +3,7 @@
   
     /*padding: 2rem;*/
     text-align: center;
-    background-color : #fff5ed;
+    background-color :white;
     border-radius: 8px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   }
@@ -44,12 +44,25 @@
   .button:hover {
     background-color:#491f1f; /* Darker blue on hover */
   }
-  
-  .footer {
-    font-size: 1rem;
-    color: #666; /* Gray color for footer text */
-    margin-top: 2rem;
+  .container1 , .container2{
+    display: flex;
   }
+  .progressBarContainer h2 {
+     font-size: 3rem;
+     text-align: center;
+     margin-left: 1rem;
+     color:#4d0808 ;
+  }
+  .countsize{
+    font-size: xx-large;
+    border:2px solid #ff7a00 ;
+    background-color: #ff7a00 ;
+    width: 50%;
+    margin: auto;
+  }
+  
+  
+
   @media (max-width: 768px) {
     .title {
         font-size: 2.5rem; /* Decrease title size */

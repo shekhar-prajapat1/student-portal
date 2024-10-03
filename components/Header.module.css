@@ -1,0 +1,107 @@
+/* Headerc.module.css */
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+   
+    background-color:#fff5ed ;
+  
+    
+  }
+  .navList{
+    display: flex;
+   
+    list-style: none;
+    text-decoration: none ; 
+
+  }
+  .logo img{
+   
+    width: 25%;
+    height: 25%;
+    align-items: left;
+    
+  }
+  .navList a {
+
+    text-decoration: none;
+    color: black;
+    
+    font-weight: 600;
+  }
+  
+  
+  .navItem {
+   
+    margin-right:5em;
+    font-size: xx-large;
+
+  }
+  .button {
+    padding: 1rem 2rem;
+    font-size: 1.2rem;
+    color: white;
+    background-color:#4d0808 ; /* dark brown background for buttons */
+    border:2px black solid;
+    border-radius: 4px;
+    cursor: pointer;
+    margin: 1rem;
+    transition: background-color 0.3s;
+  }
+  .button:hover {
+    background-color:#593030;
+  }
+  .navList a:hover {
+    border-bottom: 3px solid #4d0808;
+    border-radius: 3%;
+  }
+
+  /* For screens smaller than 768px (tablets and mobile devices) */
+  @media (max-width: 768px) {
+    .logo{
+        display:none ; 
+    }
+    .header {
+      flex-direction: row;
+      align-items: center;
+    }
+    .navList {
+      flex-direction: row;
+    }
+    .navItem {
+      margin-right: 1rem; /* add margin between nav items */
+      margin-bottom: 1rem;
+      font-size: x-large;
+    }
+    .button {
+      padding: 0.5rem 1rem;
+      font-size: 1rem;
+      margin-left: 1rem; /* add margin between button and nav items */
+    }
+  }
+  
+  /* For screens smaller than 480px (small mobile devices) */
+  @media (max-width: 480px) {
+    .logo{
+        display:none ; 
+    }
+    .header {
+      padding: 0.5rem;
+    }
+    .navList {
+      flex-direction: row;
+      flex-basis: 60%;
+    }
+    .navItem {
+      margin-bottom: 0.5rem;
+      margin-right: 0.5rem;
+      font-size: x-large;
+       /* reduce margin between nav items on smaller screens */
+    }
+    .button {
+      padding: 0.2rem 0.5rem;
+      font-size: 0.8rem;
+      margin-left: 0.5rem;
+      flex-basis: 20%; /* reduce margin between button and nav items on smaller screens */
+    }
+  }
