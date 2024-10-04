@@ -36,36 +36,45 @@ export default function Home() {
       <Headerc></Headerc>
       
       <div className={styles.container1}>
-      <div className={styles.progressBarContainer}>
+      <div className={styles.wrapper}>
+        <div className={styles.progressBarContainer}>
+        <div className={styles.bar1}>
         <h2>Students Appearing for JEE:</h2>
         <p id="appeared-students" className= {styles.countsize}>{appearedCount}</p>
+        </div>
+        <div className={styles.bar2}>
         <h2>Students Cleared Exam:</h2>
         <p id="cleared-students" className= {styles.countsize}>{clearedCount}</p>
+        </div>
+
+        </div>
+        
+        
         <div className={styles.progressBar}>
           <div id="progress" className={styles.progress} style={{ width: (clearedCount / 50000) * 100 + '%' }}></div>
         </div>
       </div>
-      <div>
-        <p>add content </p>
-      </div>
-      </div>
-      <br></br>
-      <div className={styles.container2}>
-        <div className={styles.info1}>
-        <h2>
-      New here? Register now and start your journey!</h2>
-      <p>
-      We’re dedicated to guiding JEE aspirants toward their goals with a structured, organized approach. Let us turn your confusion into a clear, step-by-step plan for exam success. Join us today and unlock your true potential!
-      </p>
-      <Link href="/register">
-        <button className={styles.button}>Register</button>
-      </Link>    
-
-        </div>
-        <div className={styles.info2}>
-
-        </div>
+      <div className= {styles.videocontainer}>
+        <video  autoPlay
+          muted loop >
+          <source src="/homepage_video.mp4" type="video/mp4" />
+        
+        </video>
+      </div> </div>
       
+      <div className={styles.container2}>
+        <div className={styles.registertext}>
+        <h2>
+    Begin your journey to success</h2>
+    
+        </div>
+        <div className={styles.register}>
+        <Link href="/register">
+        <button className={styles.button}>Get Started</button>
+      </Link>    
+      
+        </div>
+        
         </div>
       
       

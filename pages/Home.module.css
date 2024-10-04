@@ -1,112 +1,208 @@
+/* Home.module.css */
+
 .container {
-    width : 100% ; 
-  
-    /*padding: 2rem;*/
-    text-align: center;
-    background-color :white;
-    border-radius: 8px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  text-align: center;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.title {
+  font-size: 2.5rem;
+  color: #502727;
+}
+
+.subtitle {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 1rem 0;
+}
+
+.instruction {
+  font-size: 1.2rem;
+  color: #ff4500;
+  margin: 1rem 0;
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4d0808;
+  border: 2px black solid;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1rem;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #491f1f;
+}
+
+.container1, .container2 {
+  display: flex;
+  justify-content: center;
+}
+
+.registertext {
+  font-size: xx-large;
+  color: #1d0303;
+}
+
+.container2 {
+  margin-top: 0%;
+  padding-top: 0%;
+}
+
+.register {
+  margin-left: 5%;
+  margin-top: 2%;
+}
+
+.videocontainer {
+  height: auto;
+}
+
+.videocontainer video {
+  width: 100%;
+  height: 70%;
+  padding-top: 4%;
+}
+
+/* ... existing code ... */
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.progressBarContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.bar1, .bar2 {
+  display: flex;
+  flex-direction:column;
+  align-items: center;
+  margin-right: 1rem; /* Decreased margin right */
+}
+
+.bar1 h2, .bar2 h2 {
+  font-size: 3rem;
+  text-align: center;
+  margin-left: 1rem;
+  color: #4d0808;
+}
+
+.bar1 p, .bar2 p {
+  font-size: xx-large;
+  border: 2px solid #ff7a00;
+  background-color: #ff7a00;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.countsize {
+  font-size: xx-large;
+  border: 2px solid #ff7a00;
+  background-color: #ff7a00;
+  width: 70%;
+  margin-left: 15%;
+}
+
+.videocontainer {
+  height: auto;
+  width: 100%;
+  margin-top: 2rem; /* Added margin top */
+}
+
+.videocontainer video {
+  width: 100%;
+  height: 70%;
+  padding-top: 4%;
+}
+
+@media (max-width: 768px) {
+  .progressBarContainer {
+    flex-direction:row;
   }
-  
+  .bar1, .bar2 {
+    margin-right: 1rem; /* Decreased margin right */
+  }
+  .bar1 h2, .bar2 h2 {
+    font-size: 2rem;
+  }
+  .bar1 p, .bar2 p {
+    font-size: x-large;
+  }
   .title {
     font-size: 2.5rem;
-    color: #502727  ; /* Bright color for the title */
   }
-  
   .subtitle {
     font-size: 1.5rem;
-    color: #333; /* Darker color for the subtitle */
-    margin: 1rem 0;
   }
-  
   .instruction {
-    font-size: 1.2rem;
-    color: #ff4500; /* Bright orange for instructions */
-    margin: 1rem 0;
+    font-size: 1.1rem;
   }
-  /*
-  #4d0808 - brown
-#fff5ed - light 
-#ff7a00 - orange  */
-  
   .button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    color: white;
-    background-color:#4d0808 ; /* dark brown background for buttons */
-    border:2px black solid;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 1rem;
-    transition: background-color 0.3s;
-  }
-  
-  .button:hover {
-    background-color:#491f1f; /* Darker blue on hover */
+    margin-top:0%;
+    padding: 0.8rem 1.5rem;
+    font-size: 1rem;
   }
   .container1 , .container2{
     display: flex;
+    flex-direction: column;
   }
-  .progressBarContainer h2 {
-     font-size: 3rem;
-     text-align: center;
-     margin-left: 1rem;
-     color:#4d0808 ;
-  }
-  .countsize{
-    font-size: xx-large;
-    border:2px solid #ff7a00 ;
-    background-color: #ff7a00 ;
-    width: 50%;
-    margin: auto;
-  }
-  
-  
-
-  @media (max-width: 768px) {
-    .title {
-        font-size: 2.5rem; /* Decrease title size */
-    }
-
-    .subtitle {
-        font-size: 1.5rem; /* Decrease subtitle size */
-    }
-
-    .instruction {
-        font-size: 1.1rem; /* Decrease instruction size */
-    }
-
-    .button {
-        padding: 0.8rem 1.5rem; /* Adjust button padding */
-        font-size: 1rem; /* Decrease button font size */
-    }
-
-    .footer {
-        font-size: 0.9rem; /* Smaller footer text */
-    }
 }
 
-/* For mobile devices */
 @media (max-width: 480px) {
-    .title {
-        font-size: 1.8rem; /* Further decrease title size for small screens */
-    }
-
-    .subtitle {
-        font-size: 1.2rem; /* Further decrease subtitle size */
-    }
-
-    .instruction {
-        font-size: 1rem; /* Further decrease instruction size */
-    }
-
-    .button {
-        width: 100%; /* Make buttons full-width on mobile */
-        font-size: 0.9rem; /* Decrease button font size */
-    }
-
-    .footer {
-        font-size: 0.8rem; /* Smaller footer text for small screens */
-    }
+  .wrapper {
+    display: flex;
+    flex-direction:column;
+  }
+  .progressBarContainer {
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+  }
+  .bar1, .bar2 {
+    margin-bottom: 0.5rem; /* Decreased margin bottom */
+    text-align: center;
+    width: 100%;
+  }
+  .bar1 h2, .bar2 h2 {
+    font-size: 1.5rem;
+  }
+  .bar1 p, .bar2 p {
+    font-size: large;
+    margin: 0 auto;
+  }
+  .videocontainer {
+    margin-top: 1rem; /* Decreased margin top */
+    width: 100%;
+  }
+  .title {
+    font-size: 1.8rem;
+  }
+  .subtitle {
+    font-size: 1.2rem;
+  }
+  .instruction {
+    font-size: 1rem;
+  }
+  .button {
+    margin-top:0%;
+    width: 100%;
+    font-size: 0.9rem;
+  }
+  .container1 , .container2{
+    display: flex;
+    flex-direction: column;
+  }
 }
-  

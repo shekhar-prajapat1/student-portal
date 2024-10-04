@@ -1,107 +1,133 @@
 /* Headerc.module.css */
+
 .header {
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fff5ed;
+  padding: 1rem; /* added padding for better layout */
+}
+
+.navList {
+  display: flex;
+  list-style: none;
+  text-decoration: none;
+  width: fit-content;
+  max-width: 100%;
+}
+
+.logo {
+  font-family: 'Berkshire Swash', cursive;
+  color: #4d0808;
+  font-size: x-large;
+  margin-left: 2%; /* reduced left margin */
+  font-stretch: extra-expanded;
+}
+
+.navList a {
+  text-decoration: none;
+  color: black;
+  font-weight: 600;
+}
+
+.navItem1, .navItem2 {
+  margin-left: 2em; /* reduced spacing between nav items */
+  font-size: xx-large;
+}
+
+.navItem2 {
+  margin-left: 1em; /* reduced spacing between nav items */
+}
+
+.button {
+  padding: 1rem 2rem;
+  font-size: 1.2rem;
+  color: white;
+  background-color: #4d0808; /* dark brown background for buttons */
+  border: 2px black solid;
+  border-radius: 4px;
+  cursor: pointer;
+  margin-right: 2rem; /* reduced spacing between login button and edge of header */
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background-color: #593030;
+}
+
+.navList a:hover {
+  border-bottom: 3px solid #4d0808;
+  border-radius: 3%;
+}
+
+@media (max-width: 768px) {
+  .header {
+    flex-direction: row;
     align-items: center;
-   
-    background-color:#fff5ed ;
-  
-    
+    padding: 0.5rem; /* reduce padding */
   }
-  .navList{
-    display: flex;
-   
-    list-style: none;
-    text-decoration: none ; 
-
+  .navList {
+    flex-direction: row;
+    flex-wrap: nowrap; /* prevent wrapping */
+    width: fit-content;
+    max-width: 100%;
   }
-  .logo img{
-   
-    width: 25%;
-    height: 25%;
-    align-items: left;
-    
+  .navItem1, .navItem2 {
+    margin-right: 0.5rem; /* reduced spacing between nav items */
+    margin-bottom: 0; /* remove margin bottom */
+    font-size: large; /* decrease font size */
+    margin-left: 1em; /* maintain space between nav items */
+    flex-shrink: 0; /* prevent shrinking and wrapping */
   }
-  .navList a {
-
-    text-decoration: none;
-    color: black;
-    
-    font-weight: 600;
-  }
-  
-  
-  .navItem {
-   
-    margin-right:5em;
-    font-size: xx-large;
-
+  .navItem2 {
+    margin-left: 0.5em; /* reduced spacing between nav items */
   }
   .button {
-    padding: 1rem 2rem;
-    font-size: 1.2rem;
-    color: white;
-    background-color:#4d0808 ; /* dark brown background for buttons */
-    border:2px black solid;
-    border-radius: 4px;
-    cursor: pointer;
-    margin: 1rem;
-    transition: background-color 0.3s;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    margin-left: 0.5rem; /* reduced spacing between login button and nav items */
   }
-  .button:hover {
-    background-color:#593030;
-  }
-  .navList a:hover {
-    border-bottom: 3px solid #4d0808;
-    border-radius: 3%;
-  }
+}
 
-  /* For screens smaller than 768px (tablets and mobile devices) */
-  @media (max-width: 768px) {
-    .logo{
-        display:none ; 
-    }
-    .header {
-      flex-direction: row;
-      align-items: center;
-    }
-    .navList {
-      flex-direction: row;
-    }
-    .navItem {
-      margin-right: 1rem; /* add margin between nav items */
-      margin-bottom: 1rem;
-      font-size: x-large;
-    }
-    .button {
-      padding: 0.5rem 1rem;
-      font-size: 1rem;
-      margin-left: 1rem; /* add margin between button and nav items */
-    }
+/* For screens smaller than 480px (small mobile devices) */
+@media (max-width: 480px) {
+  .logo {
+    display: none; /* hide logo on small mobile devices */
   }
-  
-  /* For screens smaller than 480px (small mobile devices) */
-  @media (max-width: 480px) {
-    .logo{
-        display:none ; 
-    }
-    .header {
-      padding: 0.5rem;
-    }
-    .navList {
-      flex-direction: row;
-      flex-basis: 60%;
-    }
-    .navItem {
-      margin-bottom: 0.5rem;
-      margin-right: 0.5rem;
-      font-size: x-large;
-       /* reduce margin between nav items on smaller screens */
-    }
-    .button {
-      padding: 0.2rem 0.5rem;
-      font-size: 0.8rem;
-      margin-left: 0.5rem;
-      flex-basis: 20%; /* reduce margin between button and nav items on smaller screens */
-    }
+  .header {
+    padding: 0.2rem; /* reduce padding */
   }
+  .navList {
+    flex-direction: row;
+    flex-wrap: nowrap; /* prevent wrapping */
+    width: fit-content;
+    max-width: 100%;
+    flex-basis: 60%;
+  }
+  .navItem1, .navItem2 {
+    margin-bottom: 0; /* remove margin bottom */
+    margin-right: 0.2rem; /* reduced spacing between nav items */
+    font-size: medium; /* decrease font size */
+    margin-left: 0.5em; /* maintain space between nav items */
+    flex-shrink: 0; /* prevent shrinking and wrapping */
+  }
+  .navItem2 {
+    margin-left: 0.2em; /* reduced spacing between nav items */
+  }
+  .button {
+    padding: 0.2rem 0.5rem;
+    font-size: 0.8rem;
+    margin-left: 0.2rem; /* reduced spacing between login button and nav items */
+    flex-basis: 20%; /* reduce margin between button and nav items on smaller screens */
+  }
+}
+@media (min-width: 1200px) {
+  .navItem1 {
+    margin-left: 10rem;
+
+    /* increase spacing between nav item 1 and 2 */
+  }
+  .navItem2{
+    margin-left: 20rem;
+  }
+}
