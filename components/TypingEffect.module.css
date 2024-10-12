@@ -15,6 +15,7 @@
         font-size: 1.5rem;           /* Smaller font size for mobile */
         margin-left: 0.5rem;         /* Adjust left margin for smaller screens */
         margin-top: 1rem;          /* Adjust top margin for smaller screens */
+        flex-direction: column;
     }
 }
 
@@ -23,6 +24,7 @@
         font-size: 2.5rem;           /* Medium font size for tablets */
         margin-left: 1rem;       /* Adjust margin for tablets */
         margin-top: 1.5rem;        /* Adjust margin for tablets */
+        flex-direction: column;
     }
 }
 
