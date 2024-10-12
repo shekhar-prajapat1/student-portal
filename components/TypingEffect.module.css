@@ -12,7 +12,7 @@
 /* Default Font Size */
 @media (max-width: 600px) {
     .typingEffect {
-        font-size: 2rem;           /* Smaller font size for mobile */
+        font-size: 1.5rem;           /* Smaller font size for mobile */
         margin-left: 0.5rem;         /* Adjust left margin for smaller screens */
         margin-top: 1rem;          /* Adjust top margin for smaller screens */
     }
@@ -20,7 +20,7 @@
 
 @media (min-width: 601px) and (max-width: 1200px) {
     .typingEffect {
-        font-size: 3rem;           /* Medium font size for tablets */
+        font-size: 2.5rem;           /* Medium font size for tablets */
         margin-left: 1rem;       /* Adjust margin for tablets */
         margin-top: 1.5rem;        /* Adjust margin for tablets */
     }
