@@ -1,7 +1,7 @@
 /* components/Footer.module.css */
 
 .footer { 
-    background-color: #4d0808; /* Background color for footer */
+    background-color:#4d0808;
     font-family: sans-serif; /* Font family */
     margin: 0; /* Reset margin */
 }

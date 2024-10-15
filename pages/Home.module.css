@@ -7,10 +7,63 @@
 }
 
 .container h3 {
-  font-size: 5rem;
-  color:#4d0808;
-  font-family: Georgia, 'Times New Roman', Times, serif;
- 
+  font-size:2rem;
+  font-family:  Manrope, sans-serif;
+  
+  background: linear-gradient(90deg, rgba(255,122,0,0.9585084033613446) 0%, rgba(77,24,8,0.9949229691876751) 69%);
+  background-clip: text;           
+  -webkit-background-clip: text;    
+  
+  
+  color: transparent;   
+}
+
+.container h1 {
+  font-size:3rem;
+  font-family:  Manrope, sans-serif;
+
+  
+  background: linear-gradient(90deg, rgba(77,24,8,0.9949229691876751) 58%, rgba(255,122,0,0.9585084033613446) 93%);
+  
+  background-clip: text;           
+  -webkit-background-clip: text;    
+  
+  
+  color: transparent;              
+}
+.row {
+  display: flex;
+  padding-left: 10%;
+  padding-right: 10%;
+}
+.e1 {
+  border: 2px solid whitesmoke ;
+  border-radius: 10%;
+  margin-left:auto;
+  margin-right: auto;
+  width: 200px;
+  height: 200px;
+  box-shadow: 5px 5px 5px grey;
+}
+.e1 img{
+  padding-top: 1%;
+  width: 75%; /* Make the image take the full width of the div */
+  height:auto; /* Maintain aspect ratio */
+  object-fit: contain;
+}
+.e1 p {
+  font-size: 1.25rem;
+  color:brown
+}
+
+
+.technology {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+#i1 :hover {
+  border-color: (0deg, rgba(34,193,195,1) 0%, rgba(216,214,69,0.9276960784313726) 100%);
+
 }
 
 
@@ -21,7 +74,7 @@
   font-size: 1.2rem;
   color: white;
   background-color: #4d0808;
-  border: 2px black solid;
+  border: 2px whitesmoke solid;
   border-radius: 4px;
   cursor: pointer;
   margin: 1rem;
@@ -98,9 +151,13 @@
 
 /* Mobile styles (max-width: 480px) */
 @media (max-width: 480px) {
+.container h1 {
+  font-size: 44px ;
+}
+.container h3 {
+ font-size:20px ;
+}
 
-  .container h3 {
-    font-size:2rem; }
   .wrapper {
     display: flex;
     flex-direction: column;
@@ -171,13 +228,7 @@
    flex-direction: column;
   
   }
-  .container h3 {
-    font-size:2.5rem; }
-    .paratext {
-      font-size: 1.5rem;
-      text-align: center;
-      width: 100%;
-    }
+  
 
     .video2 {
       width: 100%;

@@ -14,22 +14,7 @@ const Headerc = () => {
       <div className={styles.logo}>
         <h2>DailiGo</h2>
       </div>
-      <div>
-        <nav className={styles.nav}>
-          <ul className={styles.navList}>
-            <li className={styles.navItem2}>
-              <Link href="/courses">
-                Courses
-              </Link>
-            </li>
-            <li className={styles.navItem1}>
-              <Link href="/quizzes">
-                Quizzes
-              </Link>
-            </li>
-          </ul>
-        </nav>
-      </div>
+     
       <div className={styles.navItem}>
         <Link href="/login">
           <button className={styles.button}>Login</button>

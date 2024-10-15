@@ -1,0 +1,40 @@
+.coursediv {
+    display: flex;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.course {
+    height: auto;
+    width :30%;
+    border: 2px solid whitesmoke;
+    background: rgb(255,122,0);
+    background: linear-gradient(0deg, rgba(255,122,0,0.4206932773109243) 0%, rgba(255,245,237,0.9024859943977591) 99%);
+    box-shadow: 5px 5px 5px rgb(238, 233, 233);
+   margin-left: 5%;padding-left: 2%;padding-right: 2%;
+   border-radius: 10%;
+  transition:  background-color 0.3s ease, transform 0.3s ease;
+   
+
+}
+.course img {
+    height:200px;
+    width: 200px; 
+    border-radius: 50%;
+    padding-left: 2%;
+    padding-right: 2%;
+    transition:  transform 1s ease;
+   
+}
+.course p {
+    text-align: left;
+    font-size: large;
+}
+.name {
+    font-size: x-large;
+    flex-wrap: nowrap;
+}
+
+.course img:hover {
+    border-radius: 2%;
+    width:100%
+}

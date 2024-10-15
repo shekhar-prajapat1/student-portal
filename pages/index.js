@@ -5,9 +5,8 @@ import styles from './Home.module.css'; // Import CSS for styling
 import Footer from '../components/Footer';
 import { Headerc } from '../components/Headerc';
 import { useState, useEffect } from 'react';
-import TypingEffect from '../components/TypingEffect';
-import Slider from '../components/Slider';
-import VideoComponent from '../components/Videocomponent';
+import { Courses } from '../components/courses';
+
 
 
 export default function Home() {
@@ -22,84 +21,52 @@ export default function Home() {
       <Headerc></Headerc>
       
       <div className={styles.container1}>
-      <div className={styles.wrapper}>
+      <h1>Unlock your potential with DailiGo</h1>
+      <Courses/>
       
-      <TypingEffect text="Unlock Your Potential with DailiGo!" speed={300}  />
-        
-       
       </div>
-      <div className= {styles.videocontainer}>
       
-      </div> </div>
       
-      {/* <div className={styles.container2}>
-      <h3> Begin your journey to success</h3>
-
-        <div className={styles.innerdiv}>
-        <div className={styles.registertext}>
-        </div>
-        <div className={styles.registerbutton}>
-        <Link href="/register">
-        <button className={styles.button}>Get Started</button>
-      </Link>    
-      
-        </div></div>
-        </div> */}
 
 
 
 
         <div className={styles.container3}>
-        <h3 >Track your Success</h3>
+        <h1 >Track your Success</h1>
 
          <div className={styles.innerdiv}>
-         <div className={styles.paratext}>
-          
-          <p>
-          Track your progress with a tracker designed for you, and reach out for a mentorship call to get personalized advice
-          </p>
-
-         </div>
-         <div className= {styles.track}>
-           <video   autoPlay loop muted className={styles.video}>
-            <source  src="/month.mp4" type="video/mp4"/>
-           </video>
-         </div>
+         
+         
 
          </div>
          
         </div>
 
         <div className={styles.container4}>
-        <h3>Pick the Right Capstone Project</h3>
-        <div className={styles.innerdiv}>
-        <div className={styles.paratext}>
-           
-           <p >Your capstone project enhances your skills and strengthens your resume, providing mentorship from specialized trainers to help turn your ideas into success</p>
-         </div>
-         <div className={styles.slider}>
-          <Slider/>
-         </div>
+        <h1>Select the Ideal Project</h1>
+           <h3>with Key Technologies to Strengthen Your Resume</h3>
+           <div className={styles.technology}>
+            <div className={styles.row}>
+              <div className={styles.e1}><img src= "Vite.js.png" id="i1"></img><p>Vite</p></div>
+              <div className={styles.e1}><img src= "MongoDB.png" id="i2"></img><p>Mongodb</p></div>
+              <div className={styles.e1}><img src= "AngularJS.png" id="i3"></img><p>Angular</p></div>
+             
+            </div>
+            
 
+           </div>
         </div>
-        
-
-        </div>
+        <br>
+        </br>
+        <br>
+        </br>
 
         <div className={styles.container5}>
-        <h3 >Finish What You Started!</h3>
+        <h1 >Finish What You Started!</h1>
          
          <div className={styles.innerdiv}>
-         <div className={styles.paratext}>
-         <p>Don't let procrastination hinder your progress
-         . Take control and complete your tasks today for a brighter and more successful tomorrow.
-          </p>
-
-     </div>
-     <div  className= {styles.video2}>
-     <VideoComponent/>
-
-     </div>
+        
+      <p>course completion tracker</p>
 
          </div>
         
