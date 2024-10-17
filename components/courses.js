@@ -1,7 +1,13 @@
 import styles from './courses.module.css'
 import { useState } from 'react';
-import Head from 'next/head';
 
+import { Nunito} from 'next/font/google';
+
+const nunito = Nunito({
+    subsets: ['latin'],
+    weights: ['200', '400', '600', '800'],
+    display: 'swap',
+  });
 
 const Courses = () => {
     const [visible1 , setvisible1] = useState(true) ; 
@@ -26,14 +32,8 @@ setvisible3(false)
     return ( 
 
       
-        <>
-        <Head>
-        <link rel="preconnect" href="https://fonts.googleapis.com"/> 
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
-
-        </Head>
-
+        <div className={nunito.className}>
+    
         
         <div className= {styles.coursediv1} onMouseEnter={dovisible1}
         >  
@@ -138,7 +138,7 @@ setvisible3(false)
             </div>
 
             </div>
-        </>
+        </div>
 
     ); } 
     

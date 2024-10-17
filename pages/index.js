@@ -1,11 +1,18 @@
 
-import Head from 'next/head';
+import head from 'next/document';
 import Link from 'next/link';
 import styles from './Home.module.css'; // Import CSS for styling
 import Footer from '../components/Footer';
 import { Headerc } from '../components/Headerc';
 import { useState, useEffect } from 'react';
 import { Courses } from '../components/courses';
+import { Nunito} from 'next/font/google';
+
+const nunito = Nunito({
+    subsets: ['latin'],
+    weights: ['200', '400', '600', '800'],
+    display: 'swap',
+  });
 
 
 
@@ -13,15 +20,15 @@ export default function Home() {
   
 
   return (
-    <div className={styles.container}>
-      <Head>
+    <div className={`${styles.container} ${nunito.className}`}>
+      <head>
        <link  rel="icon" href ="favicon.png"></link>
         <title>DailiGo: Randomization to Systemization</title>
         <link rel="preconnect" href="https://fonts.googleapis.com"/> 
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
 <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
 
-      </Head>
+      </head>
       <Headerc></Headerc>
       
       <div className={styles.container1}>
