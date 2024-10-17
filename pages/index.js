@@ -17,11 +17,16 @@ export default function Home() {
       <Head>
        <link  rel="icon" href ="favicon.png"></link>
         <title>DailiGo: Randomization to Systemization</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com"/> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+<link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet"/>
+
       </Head>
       <Headerc></Headerc>
       
       <div className={styles.container1}>
       <h1>Unlock your potential with DailiGo</h1>
+      <h3>join our exclusive courses, expertly crafted to fit your unique goals and aspirations.</h3>
       <Courses/>
       
       </div>
@@ -45,13 +50,13 @@ export default function Home() {
         <div className={styles.container4}>
         <h1>Select the Ideal Project</h1>
            <h3>with Key Technologies to Strengthen Your Resume</h3>
-           <div className={styles.technology}>
+           
             <div className={styles.row}>
               <div className={styles.e1}><img src= "Vite.js.png" id="i1"></img><p>Vite</p></div>
               <div className={styles.e1}><img src= "MongoDB.png" id="i2"></img><p>Mongodb</p></div>
               <div className={styles.e1}><img src= "AngularJS.png" id="i3"></img><p>Angular</p></div>
              
-            </div>
+          
             
 
            </div>

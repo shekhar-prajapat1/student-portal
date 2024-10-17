@@ -1,27 +1,65 @@
-.coursediv {
+.coursediv1  , .coursediv2   {
+    
+   padding-right: 2% ;
+    padding-bottom: 5%;
     display: flex;
-    padding-left: 5%;
-    padding-right: 5%;
+    font-family: 'nunito';
+    justify-content: space-between;
+
+    
 }
-.course {
-    height: auto;
+.coursdiv3 {
+    width: 30%;
+}
+
+ .course{
+   
+    align-items: center;
+    height:40rem;
     width :30%;
     border: 2px solid whitesmoke;
     background: rgb(255,122,0);
     background: linear-gradient(0deg, rgba(255,122,0,0.4206932773109243) 0%, rgba(255,245,237,0.9024859943977591) 99%);
     box-shadow: 5px 5px 5px rgb(238, 233, 233);
-   margin-left: 5%;padding-left: 2%;padding-right: 2%;
-   border-radius: 10%;
+  
+   border-radius: 3%;
   transition:  background-color 0.3s ease, transform 0.3s ease;
+  margin-bottom: 2%;
+  margin-left: 3%;padding-left: 1%;padding-right: 1%;
+
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+   
+    font-style: normal;
+    display: flex;
+    flex-direction: column;
+  
    
 
 }
+.innerdiv {
+    
+        flex: 1; 
+      
+       
+
+}
+
+
+
+
+
+
+.course:hover {
+    transform : scale(1.05); 
+}
 .course img {
     height:200px;
-    width: 200px; 
-    border-radius: 50%;
-    padding-left: 2%;
-    padding-right: 2%;
+    width: 100%; 
+    border-radius: 2%;
+    padding-top: 0%;
+    padding-left: 1%;
+    padding-right: 1%;
     transition:  transform 1s ease;
    
 }
@@ -32,9 +70,47 @@
 .name {
     font-size: x-large;
     flex-wrap: nowrap;
+    height: 10%;
+    font-style:italic;
+    color: rgb(15, 20, 82);
 }
 
-.course img:hover {
-    border-radius: 2%;
-    width:100%
+
+
+@media screen and (max-width: 768px) {
+    .coursediv1, .coursediv2 {
+        flex-direction: column; /* Stack items vertically */
+        padding-right:0.5%;
+        padding-bottom: 10%; 
+        padding-left: 1.5%;
+    }
+
+    .coursdiv3 {
+        width: 100%; /* Full width on mobile */
+    }
+
+    .course {
+     /* Make course take most of the width */
+        height:auto; 
+        align-items: center;
+        margin: 5%;
+        width:90% ;
+        
+      
+    }
+
+    .course img {
+        height:150px; /* Maintain aspect ratio */
+        width:70%
+    }
+
+    .course p {
+        font-size: medium; /* Adjust font size for readability */
+        margin-left: 1%;
+    }
+
+    .name {
+        font-size:1.5rem; /* Adjust name font size */
+    }
 }
+

@@ -4,37 +4,32 @@
   width: 100%;
   text-align: center;
   background-color: white;
+  font-family: "Nunito", sans-serif;
+  font-optical-sizing: auto;
+ 
+  font-style: normal;
+  
 }
 
 .container h3 {
   font-size:2rem;
-  font-family:  Manrope, sans-serif;
-  
-  background: linear-gradient(90deg, rgba(255,122,0,0.9585084033613446) 0%, rgba(77,24,8,0.9949229691876751) 69%);
-  background-clip: text;           
-  -webkit-background-clip: text;    
-  
-  
-  color: transparent;   
+color:black;   
 }
 
 .container h1 {
-  font-size:3rem;
-  font-family:  Manrope, sans-serif;
-
   
-  background: linear-gradient(90deg, rgba(77,24,8,0.9949229691876751) 58%, rgba(255,122,0,0.9585084033613446) 93%);
+  color: transparent;
   
+  background: linear-gradient(90deg, rgba(255,122,0,0.9585084033613446) 0%, rgba(77,24,8,0.9949229691876751) 69%);
   background-clip: text;           
-  -webkit-background-clip: text;    
-  
-  
-  color: transparent;              
+  -webkit-background-clip: text;  
 }
 .row {
   display: flex;
   padding-left: 10%;
   padding-right: 10%;
+  margin-left: 2%;
+  margin-right: 2%;
 }
 .e1 {
   border: 2px solid whitesmoke ;
@@ -57,10 +52,6 @@
 }
 
 
-.technology {
-  padding-left: 5%;
-  padding-right: 5%;
-}
 #i1 :hover {
   border-color: (0deg, rgba(34,193,195,1) 0%, rgba(216,214,69,0.9276960784313726) 100%);
 
@@ -101,46 +92,8 @@
 
 
 
-/* ... existing code ... */
-
-.wrapper {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
 
 
-
-
-
-
-.video {
-  width: 80%;
-  height:90%;                 /* Maintain aspect ratio */
-}
-
-.paratext {
-  font-size:3rem;
-  color: black;
-  font-family:sans-serif;
-  text-align: left;
-  margin-left:2%;
-  width: 50%;
-}
-
-
-.slider {
-  flex-basis: 50%; /* Occupies the remaining 50% */
-}
-
-
-
-.innerdiv {
-  display: flex;
-  justify-content: space-between;
-
-
-}
 
 
 
@@ -152,88 +105,98 @@
 /* Mobile styles (max-width: 480px) */
 @media (max-width: 480px) {
 .container h1 {
-  font-size: 44px ;
+  font-size: large
 }
 .container h3 {
- font-size:20px ;
+ font-size:larger ;
 }
 
-  .wrapper {
-    display: flex;
-    flex-direction: column;
-  }
-  .progressBarContainer {
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-  }
+  
   
   .button {
     margin-top: 0%;
     width: 100%;
     font-size: 0.9rem;
   }
+
+  .h3{
+    font-size: large;
+  }
+
+  .h1{
+    font-size: larger;
+  }
  
   
   
   
-  .video {
-    width: 80%;
-    height:80%;                 /* Maintain aspect ratio */
-  }
-  .innerdiv {
-    display: flex;
-    justify-content: space-between;
-   flex-direction: column;
   
-  }
-  .paratext {
-    font-size: 1rem;
-    text-align: center;
-    width: 100%;
-  }
+ 
+  .e1 {
+    width: 30%; /* Use percentage for width */
+    height:2rem; /* Allow height to adjust based on content */
+    max-height: 150px; /* Set a max height to maintain aspect ratio */
+    margin-left:5%; /* Center the element */
+    margin-right:5%; /* Center the element */
+}
 
-  .video2 {
-    width: 100%;
-    height:40%;
-    align-items: center;
-  }
+.e1 img {
+    width: 80%; 
+}
+
+.e1 p {
+    font-size: 1rem; /* Adjust font size for readability */
+}
+
+
+ 
 
 
 }
 
 /* Tablet styles (min-width: 481px and max-width: 768px) */
 @media (min-width: 481px) and (max-width: 768px) {
-  .progressBarContainer {
-    flex-direction: row;
-  }
+
  
   .button {
     padding: 0.8rem 1.5rem;
     font-size: 1rem;
   }
-  .paratext {
-    font-size:2rem;
+
+  .container h1 {
+    font-size:2rem ; 
   }
-  
-  
-  .video {
-    width: 80%;
-    height:80%;                 /* Maintain aspect ratio */
+  .container h3 {
+   font-size:1.5rem;
   }
 
-  .innerdiv {
-    display: flex;
-    justify-content: space-between;
-   flex-direction: column;
-  
-  }
-  
 
-    .video2 {
-      width: 100%;
-      height:50%;
-      align-items: center;
-    }
+  .e1 {
+    width: 30%; /* Use percentage for width */
+    height:auto; /* Allow height to adjust based on content */
+    max-height: 150px; /* Set a max height to maintain aspect ratio */
+    margin-left:5%; /* Center the element */
+    margin-right:5%; /* Center the element */
 }
+
+.e1 img {
+    width: 75%; 
+}
+
+.e1 p {
+    font-size: 1rem; /* Adjust font size for readability */
+}
+
+
+
+
+
+ 
+}
+
+
+
+  
+
+
 
