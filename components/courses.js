@@ -35,7 +35,7 @@ setvisible3(false)
         <div className={nunito.className}>
     
         
-        <div className= {styles.coursediv1} onMouseEnter={dovisible1}
+        <div className= {styles.coursediv1} onMouseEnter={dovisible1} 
         >  
             <div className={styles.course} > 
                 
@@ -44,7 +44,7 @@ setvisible3(false)
                 
               
 
-                <div  className={styles.innerdiv} style={{ display: visible1 ? 'none' : 'block' }}  >
+                <div  className={styles.innerdiv}  style={{ display: visible1 ? 'none' : 'block' }} >
 
                 <img src="ml.jpg" ></img>
                  <p className={styles.description} >
@@ -58,7 +58,7 @@ setvisible3(false)
 
                 </div>
                 </div>
-            <div className={styles.course} >
+            <div className={styles.course}  >
                 <h4  className={styles.name}>
                 Data Science:Basic to Advanced 
                 </h4>
@@ -74,12 +74,12 @@ setvisible3(false)
                    The course also delves into cloud computing, big data technologies, and ethical considerations.  </p> </div>
                  </div>
           
-            <div className={styles.course}>
+            <div className={styles.course}  >
             <h4  className={styles.name}> Cloud Computing
 
             </h4>
 
-            <div className={styles.innerdiv} style={{ display: visible1 ? 'none' : 'block' }}>
+            <div className={styles.innerdiv} style={{ display: visible1 ? 'none' : 'block' }} >
             <img src="ml.jpg"></img>
             <p className={styles.description}>Learning cloud computing is essential for staying competitive in today's tech-driven landscape, as it enables businesses to innovate, reduce costs, and enhance scalability.It is designed by subject experts, will take you from fundamental concepts to advanced applications of cloud technologies. You’ll explore key topics such as cloud service and deployment models, virtualization, cloud platforms (AWS, Azure, Google Cloud), cloud security, storage, networking, and serverless computing. The course also includes practical knowledge on DevOps, cloud automation, and governance.</p>
                  </div>  </div>

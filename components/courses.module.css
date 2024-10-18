@@ -15,7 +15,7 @@
  .course{
    
     align-items: center;
-    height:40rem;
+    height:auto;
     width :30%;
     border: 2px solid whitesmoke;
     background: rgb(255,122,0);
@@ -27,10 +27,7 @@
   margin-bottom: 2%;
   margin-left: 3%;padding-left: 1%;padding-right: 1%;
 
-    font-family: "Nunito", sans-serif;
-    font-optical-sizing: auto;
-   
-    font-style: normal;
+  
     display: flex;
     flex-direction: column;
   
@@ -63,7 +60,9 @@
     transition:  transform 1s ease;
    
 }
+
 .course p {
+   
     text-align: left;
     font-size: large;
 }
