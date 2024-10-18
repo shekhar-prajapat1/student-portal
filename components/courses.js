@@ -1,4 +1,4 @@
-import styles from './courses.module.css'
+import styles from './courses.module.css';
 import { useState } from 'react';
 
 import { Nunito} from 'next/font/google';
