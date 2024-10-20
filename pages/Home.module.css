@@ -29,6 +29,7 @@ color:black;
   padding-right: 10%;
   margin-left: 2%;
   margin-right: 2%;
+  padding-bottom: 3%;
 }
 .e1 {
   border: 2px solid whitesmoke ;
@@ -38,6 +39,9 @@ color:black;
   width: 200px;
   height: 200px;
   box-shadow: 5px 5px 5px grey;
+
+  
+ 
 }
 .e1 img{
   padding-top: 1%;
@@ -51,10 +55,7 @@ color:black;
 }
 
 
-#i1 :hover {
-  border-color: (0deg, rgba(34,193,195,1) 0%, rgba(216,214,69,0.9276960784313726) 100%);
 
-}
 
 
 

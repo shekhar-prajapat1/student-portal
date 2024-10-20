@@ -15,7 +15,7 @@ import Head from 'next/head';
 
 export default function Home() {
   
-
+  const [bord, setborder] = useState(true) ; 
   return (
     <div className={styles.container}>
 
@@ -55,14 +55,29 @@ export default function Home() {
            <h3>with Key Technologies to Strengthen Your Resume</h3>
            
             <div className={styles.row}>
-              <div className={styles.e1}><img src= "Vite.js.png" id="i1"></img><p>Vite</p></div>
-              <div className={styles.e1}><img src= "MongoDB.png" id="i2"></img><p>Mongodb</p></div>
-              <div className={styles.e1}><img src= "AngularJS.png" id="i3"></img><p>Angular</p></div>
-             
-          
-            
+                  <div className={styles.e1} onMouseEnter={()=> {setborder(false)}} 
+                    style={{boxShadow :bord?'none' : '0 0 5px rgba(66, 184, 131, 0.84),0 0 10px rgba(66, 184, 131, 0.7), 0 0 15px rgba(53, 73, 94, 0.5),  0 0 20px rgba(53, 73, 94, 0.4)' , 
+                     display : 'inline-block' , 
+                    }}><img src= "vue.png" ></img><p>Vue</p></div> 
+              <div className={styles.e1} onMouseEnter={()=> {setborder(false)}} 
+                    style={{boxShadow : bord?'none' : '0 0 5px rgba(60, 156, 48, 0.79), 0 0 10px rgba(60, 156, 48, 0.5), 0 0 15px rgba(255, 255, 255, 0.83), 0 0 20px rgba(255, 255, 255, 0.5)',
 
-           </div>
+                     display : 'inline-block' , }}
+               ><img src= "MongoDB.png"></img><p>Mongodb</p></div>
+              
+              <div className={styles.e1} onMouseEnter={()=> {setborder(false)}} 
+                    style={{boxShadow :bord?'none' : '0 0 5px rgba(66, 184, 131, 0.84),0 0 10px rgba(66, 184, 131, 0.7), 0 0 15px rgba(53, 73, 94, 0.5),  0 0 20px rgba(53, 73, 94, 0.4)' , 
+                     display : 'inline-block' , 
+                    }}><img src= "AngularJS.png" ></img><p>Angular</p></div>  </div>
+            
+            <div className={styles.row} >
+                <div className={styles.e1} ><img src= "django.png"></img><p>Django</p></div>
+              <div className={styles.e1} ><img src= "Ruby.png" ></img><p>Ruby</p></div>
+              <div className={styles.e1} ><img src= "tensorflow.png.png" ></img><p>Tensorflow</p></div>
+        
+            </div>
+
+         
         </div>
         <br>
         </br>
